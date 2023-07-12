@@ -12,6 +12,7 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/kylebrantley/seer/internal/event"
+
 	"github.com/rs/zerolog"
 )
 
