@@ -1,5 +1,9 @@
 package event
 
+import (
+	"fmt"
+)
+
 type Operation int
 
 func (o Operation) String() string {
@@ -17,7 +21,7 @@ const (
 )
 
 type Batch struct {
-	Events map[string]Operation // map of file paths and operations.
+	Events map[string]Operation
 }
 
 func NewBatch() *Batch {
@@ -40,6 +44,8 @@ func (e *Batch) Add(path string, op Operation) {
 	if _, ok := e.Events[path]; ok {
 		return
 	}
+
+	fmt.Println("thing")
 
 	e.Events[path] = op
 }
