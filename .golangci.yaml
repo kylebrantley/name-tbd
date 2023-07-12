@@ -20,6 +20,7 @@ linters:
     - bidichk
     - errcheck
     - errname
+    - forbidigo
     - forcetypeassert
     - gocheckcompilerdirectives
     - goconst
@@ -42,6 +43,6 @@ linters:
     - typecheck
     - unused
     - usestdlibvars
+    - whitespace
     - wrapcheck
     - wsl
-    - whitespace
