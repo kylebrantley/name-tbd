@@ -1,9 +1,5 @@
 package event
 
-import (
-	"fmt"
-)
-
 type Operation int
 
 func (o Operation) String() string {
@@ -44,8 +40,6 @@ func (e *Batch) Add(path string, op Operation) {
 	if _, ok := e.Events[path]; ok {
 		return
 	}
-
-	fmt.Println("thing")
 
 	e.Events[path] = op
 }
